@@ -153,7 +153,7 @@ function sortData(string) {
             counter++;
         }
     }
-    string = "";
+    let string = "";
     for(let i=0; i < arrString.length; i++) {
         string += arrString[i];
     }
