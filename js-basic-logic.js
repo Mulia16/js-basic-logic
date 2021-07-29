@@ -4,10 +4,10 @@ function even(word) {
         return 'Error, input bukan string';
     } 
     let genap = '';
-    genap += word[i];
     for(let i=1; i<word.length; i+=2) {
-        return genap;
+        genap += word[i];
     }
+    return genap;
 }
 
 /// 2
@@ -35,12 +35,12 @@ function countVowelAndConsonant(word) {
     let vowel = 0;
     for(let i=0;i<word.length;i++) {
         if (word[i] === 'a' || word[i] === 'i' || word[i] === 'u' || word[i] === 'e' || word[i] === 'o') {
-            vowel++
+            vowel++;
         } else {
-            consonant++
+            consonant++;
         }
     }
-    return `Jumlah vokal: ${vowel}, Jumlah consonant: ${consonant}`
+    return `Jumlah vokal: ${vowel}, Jumlah consonant: ${consonant}`;
 }
 
 /// 4
@@ -65,7 +65,7 @@ function palindrome(word) {
 
 /// 6
 function exchangeCoin(number) {
-    if (typeof word !== 'number') {
+    if (typeof number !== 'number') {
         return 'Error, tipe data bukan number';
     }
     let exchange = '';
@@ -99,7 +99,7 @@ function exchangeCoin(number) {
             number -= 1
         }
     }
-    console.log(exchange);
+    return exchange;
 }
 
 /// Helper Function untuk no 7 dan 8
